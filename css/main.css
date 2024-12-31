@@ -229,6 +229,12 @@ body {
 
 .card-page__text{
   color: snow;
+  max-width: 100%; /* Ограничение ширины контейнера */
+  max-height: 300px; /* Ограничение высоты контейнера */
+  overflow-y: auto; /* Добавляем вертикальную прокрутку */
+  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+  padding: 10px; /* Внутренние отступы */
+  box-sizing: border-box; /* Учитываем padding в размере контейнера */
 }
 
 @media (max-width: 767px) {
